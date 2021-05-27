@@ -411,4 +411,8 @@
     }
     return scrollDirection;
 }
+
+- (void)dealloc {
+    [self.reactPageViewController removeFromParentViewController];
+}
 @end
